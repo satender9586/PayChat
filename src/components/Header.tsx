@@ -2,8 +2,8 @@ import groupImg from "../assests/group.png"
 
 const Header = () => {
   return (
-    <header className="px-20 pt-14 relative z-0 h-screen bg-gradient-to-r from-[#fadff5] via-[#f7ecec] to-[#faf3ff] overflow-hidden">
-      <div className="container mx-auto px-3 md:px-8">
+    <header className="pt-14 relative z-0 h-screen bg-gradient-to-r from-[#fadff5] via-[#f7ecec] to-[#faf3ff] overflow-hidden">
+      <div className="container mx-auto px-3 md:px-10 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 py-8 gap-8">
           <div className="flex flex-col justify-center">
             <h1 className="text-5xl md:text-5xl font-serif text-[#AF0D5A] mb-4">
