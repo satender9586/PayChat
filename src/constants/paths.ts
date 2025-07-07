@@ -1,5 +1,30 @@
-const PATHS = {
-    HOME :"/home"
+// Paths
+export const PATHS = {
+    HOME: "/",
+    ABOUT: "/about",
+    CONTACT: "/contact",
+    LOGIN: "/login",
+    SIGNUP: "/singup",
+    DASHBOARD: "/dashboard",
 }
-export default PATHS;
+
+// navbaar tabs
+export const NAVBAR_TABS = [
+    {
+        TABNAME: "Home",
+        PATH: "/"
+    },
+    {
+        TABNAME: "About",
+        PATH: "/about"
+    },
+    {
+        TABNAME: "Contact",
+        PATH: "/contact"
+    },
+    {
+        TABNAME: "Testimonials",
+        PATH: "/testimonials"
+    },
+]
 

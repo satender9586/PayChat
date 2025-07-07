@@ -1,7 +1,8 @@
 import Logo from "../assests/Logo.png"
 import Button from "./Button"
 import { IoMdMenu } from "react-icons/io";
-
+import { Link } from "react-router-dom";
+import { NAVBAR_TABS } from "@/constants/paths";
 
 const Navbaar = () => {
   return (
@@ -17,10 +18,12 @@ const Navbaar = () => {
         </div>
         <div className=" sm:col-span-2 hidden sm:flex  justify-center ">
           <ul className="flex gap-3 md:gap-4 justify-center text-[#6D6D6E] font-sans text-[18px]">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Testimonials</li>
+           {
+            NAVBAR_TABS.map(({PATH,TABNAME})=>(
+                <Link to={PATH}><li >{TABNAME}</li></Link>
+            ))
+           }
+           
           </ul>
         </div>
         <div className="hidden sm:flex justify-end   gap-2 col-span-2 sm:col-span-1 ">
