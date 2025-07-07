@@ -5,6 +5,4 @@ export type ButtonProps = {
   type?: 'button' | 'submit' | 'reset'
   onClick?: () => void
   disabled?: boolean,
-  bgColor,
-  textColor
 }

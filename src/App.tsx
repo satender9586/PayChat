@@ -9,6 +9,8 @@ import PageNotFound from './components/PageNotFound'
 import Layout from './components/Layout'
 import Login from './pages/login/Login'
 import SignUp from './pages/signup/SignUp'
+import DashboardLayout from './components/DashboardLayout'
+
 
 const routes = createBrowserRouter([
   {
@@ -37,13 +39,22 @@ const routes = createBrowserRouter([
       ,
       {
         path: PATHS.CONTACT.slice(1),
+        errorElement: <PageNotFound />,
         element: <Contact />
       }
     ]
   },
   {
     path: PATHS.DASHBOARD,
-    element:<Dashboard/>
+    element:<DashboardLayout/>,
+    errorElement: <PageNotFound />,
+    children:[
+       {
+        index: true,
+        element: <Dashboard />
+      },
+     
+    ]
   }
 ])
 

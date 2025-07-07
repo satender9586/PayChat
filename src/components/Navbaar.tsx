@@ -6,8 +6,8 @@ import { NAVBAR_TABS } from "@/constants/paths";
 
 const Navbaar = () => {
   return (
-    <div className="absolute w-full z-[999] border-b border-[#ED837A]">
-      <div className="container mx-auto px-3 md:px-10 lg:px-20 grid grid-cols-4 py-2 lg:py-2 text-white items-center">
+    <div className="h-16 absolute w-full z-[999] border-b border-[#ED837A]">
+      <div className="h-full container mx-auto px-3 md:px-10 lg:px-20 grid grid-cols-4 py-2 lg:py-2 text-white items-center">
         <div className="col-span-2 sm:col-span-1  flex items-center ">
           <div>
             <img src={Logo} alt="logo" className="object-cover w-10 h-auto" />
@@ -27,9 +27,8 @@ const Navbaar = () => {
           </ul>
         </div>
         <div className="hidden sm:flex justify-end   gap-2 col-span-2 sm:col-span-1 ">
-          <Button bgColor={"#4CAF4F"} textColor={"white"}>Login</Button>
-          <Button bgColor={"#4CAF4F"} textColor={"white"}>Login</Button>
-  
+          <Button >Login</Button>
+          <Button >SingUp</Button>
         </div>
         <div className="flex sm:hidden justify-end gap-2 col-span-2 sm:col-span-1 ">
           <IoMdMenu className="size-[22px] text-black"/>
