@@ -40,14 +40,16 @@ const DashboardLayout = () => {
       <main className="flex-1 bg-[#FFFFFF] overflow-y-auto flex flex-col">
         {/* Dashboard Header */}
         <DashboardMainHeader />
-
         <section
-          className="flex-1 p-6 bg-cover bg-center bg-[#e8e8e8]"
+          className="flex-1 p-6 px-8  bg-cover bg-center bg-[#e8e8e8]"
           style={{ backgroundImage: `url(${backgroundImg})`, objectFit: "contain" }}
         >
-          <p className=" text-2xl font-bold">
+          <div className="border h-full">
+            <p className="text-2xl font-bold">
             Welcome to your dashboard!
           </p>
+          </div>
+          
         </section>
       </main>
     </div>
